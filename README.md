@@ -2,4 +2,4 @@
 
 
 url :
-https://kim-j-s.github.io/miraenpc/dist/index.html
+https://kim-j-s.github.io/miraenmobile/index.html
