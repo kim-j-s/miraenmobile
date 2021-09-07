@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../../css/common.css">
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<title>미래엔</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<div id="content" data-page="input">
+			<div class="form_wrap">
+				<div class="container">
+					<div class="form_box">
+						<img src="../../images/img/input/img_input_logo.png" alt="미래엔" class="tit small">
+						<div class="join_order">
+							<div>
+								<p class="guide_txt">회원가입 정보를 입력해주세요.</p>
+							</div>
+							<ol>
+								<li>1</li>
+								<li>2</li>
+								<li class="on">3</li>
+							</ol>
+							<a href="javascript:history.back();" class="back">뒤로가기</a>
+						</div>
+
+						<div class="input_table">
+							<table>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<div>
+												<label for="userName">이름</label>
+												<i>*<span class="hidden">필수입력</span></i>
+											</div>
+										</th>
+										<td>
+											<div data-input-item class="disable">
+												<input type="text" id="userName" data-error placeholder="이름을 입력하세요.">
+												<p data-alert>한글 / 영문 2~17자 이내로 입력해주세요.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div>
+												<label for="userId">아이디 또는 이메일</label>
+												<i>*<span class="hidden">필수입력</span></i>
+											</div>
+										</th>
+										<td>
+											<div data-input-item class="disable">
+												<input type="text" id="userId" data-error placeholder="아이디 또는 이메일을 입력하세요.">
+												<p data-alert>아이디는 6~12자 이내로 입력해주세요.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div>
+												<label for="userPw">비밀번호</label>
+												<i>*<span class="hidden">필수입력</span></i>
+											</div>
+										</th>
+										<td>
+											<div data-input-item="pw" class="disable">
+												<input type="password" data-error id="userPw" placeholder="현재 비밀번호를 입력하세요.">
+												<span class="status">사용불가</span>
+												<p data-alert>영문/숫자/특수문자 조합하여 8~12자로 설정하세요.</p>
+											</div>
+											<div data-input-item="pw" class="re disable">
+												<input type="password" data-error id="userPwRe" placeholder="비밀번호를 한번 더 입력하세요.">
+												<span class="status">사용불가</span>
+												<p data-alert>비밀번호가 일치하지 않습니다.</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="info_dialog" style="text-align:left;">
+							아래 항목은 아이디·비밀번호 찾기 또는 서비스 안내를
+							위해 필요한 정보이므로 정확하게 입력해주세요.
+						</div>
+
+						<div class="input_table">
+							<table>
+								<colgroup>
+									<col>
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<div>
+												<label for="birth">생년월일</label>
+												<i>*<span class="hidden">필수입력</span></i>
+											</div>
+										</th>
+										<td>
+											<div data-input-item="birth" class="disable">
+												<div class="box">
+													<input type="text" placeholder="년(4자리)" maxlength="4" id="birth" data-error>
+													<div data-select class="input">
+														<select>
+															<option>1월</option>
+															<option>2월</option>
+															<option>3월</option>
+															<option>4월</option>
+															<option>5월</option>
+															<option>6월</option>
+															<option>7월</option>
+															<option>8월</option>
+															<option>9월</option>
+															<option>10월</option>
+															<option>11월</option>
+															<option>12월</option>
+														</select>
+													</div>
+													<input type="text" placeholder="일" maxlength="2">
+												</div>
+												<p data-alert>태어난 년도 4자리를 정확하게 입력하세요.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div>
+												<label for="userPhone">휴대폰 번호</label>
+												<i>*<span class="hidden">필수입력</span></i>
+											</div>
+										</th>
+										<td>
+											<div data-input-item class="disable">
+												<input type="text" id="userPhone" data-error placeholder="휴대폰 번호를 입력하세요.">
+												<p data-alert>필수 입력 사항입니다.</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div>
+												<label for="userMail">본인 확인 이메일</label>
+												<i>*<span class="hidden">필수입력</span></i>
+											</div>
+										</th>
+										<td>
+											<div data-input-item class="disable">
+												<input type="text" id="userMail" data-error placeholder="이메일을 입력하세요.">
+												<p data-alert>필수 입력 사항입니다.</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p style="margin:30px 0 20px;">
+							선생님 인증을 하시면 교사용 학습 자료를<br>
+							다운 받으실 수 있습니다.
+						</p>
+
+						<div data-btn>
+							<button type="button" class="show_teacher toggle">
+								<span>선생님이신가요?</span>
+							</button>
+						</div>
+
+						<div class="teacher_info" style="display:none;">
+							<div data-tab="tab1" class="bookmark">
+								<ul>
+									<li class="on"><button type="button">학교 선생님(교사)</button></li>
+									<li><button type="button">학원 선생님</button></li>
+								</ul>
+							</div>
+							<div data-tab-cont="tab1">
+								<div class="tab_cont input_box">
+
+									<div class="cert_box">
+										<div class="cert_item">
+											<span class="tit">교사 인증</span>
+											<div data-btn>
+												<button type="button" class="next">
+													<span>교사 인증</span>
+												</button>
+											</div>
+										</div>
+										<div class="result teacher">
+											<!-- [D] 인증완료시 .status에 on 클래스 부여 -->
+											<span class="status on"><i></i>인증완료</span>
+											<!-- <span class="status">서류인증(등록대기중)</span> -->
+											<span class="type">GPKI / EPKI 인증</span>
+											<!-- [D] GPKI / EPKI 인증일때만 노출 -->
+											<div class="date">
+												인증일자 (2021.06.02)
+											</div>
+										</div>
+									</div>
+
+									<div class="cert_box">
+										<div class="cert_item">
+											<span class="tit">학교명 검색</span>
+											<div data-btn>
+												<button type="button" class="next">
+													<span>학교명 검색</span>
+												</button>
+											</div>
+										</div>
+										<div class="result school">
+											<ul class="cate">
+												<li>고등학교</li>
+												<li>서울특별시</li>
+											</ul>
+											<div class="name">
+												서울공업고등학교 부설 기계공동실습소
+											</div>
+										</div>
+									</div>
+
+									<table class="option">
+										<colgroup>
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">
+													과목 및 교과서
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>옵션</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"></th>
+												<td>
+													<div data-select>
+														<select>
+															<option>옵션</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<!-- [D] 초등학교교사 노출 -->
+											<tr>
+												<th scope="row">
+													<ul data-radio>
+														<li>
+															<input type="radio" name="teacherType" id="teacherType1">
+															<label for="teacherType1">담임</label>
+														</li>
+													</ul>
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>1학년</option>
+															<option>2학년</option>
+															<option>3학년</option>
+															<option>4학년</option>
+															<option>5학년</option>
+															<option>6학년</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													<ul data-radio>
+														<li>
+															<input type="radio" name="teacherType" id="teacherType2">
+															<label for="teacherType2">전담</label>
+														</li>
+													</ul>
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>영어</option>
+															<option>음악</option>
+															<option>체육</option>
+															<option>과학</option>
+															<option>도덕</option>
+															<option>실과</option>
+															<option>미술</option>
+															<option>진로</option>
+															<option>기타</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													<ul data-radio>
+														<li>
+															<input type="radio" name="teacherType" id="teacherType3">
+															<label for="teacherType3">직위</label>
+														</li>
+													</ul>
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>교장</option>
+															<option>교감</option>
+															<option>부장교사</option>
+															<option>수석교사</option>
+															<option>보건교사</option>
+															<option>기타</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<div class="tab_cont input_box" style="display:none;">
+
+									<table class="option">
+										<colgroup>
+											<col style="width:100px;">
+											<col>
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">
+													학원/교습소명
+												</th>
+												<td>
+													<input type="text" placeholder="학원명을 입력하세요.">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													지역 선택
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>시/도</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"></th>
+												<td>
+													<div data-select>
+														<select>
+															<option>구/군</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													학교급 선택
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>초등</option>
+															<option>중등</option>
+															<option>고등</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													과목 선택
+												</th>
+												<td>
+													<div data-select>
+														<select>
+															<option>국어</option>
+															<option>영어</option>
+															<option>수학</option>
+															<option>사회</option>
+															<option>과학</option>
+															<option>기타</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+						</div>
+
+						<script>
+							$('button.show_teacher').on('click', function() {
+								$(this).toggleClass('on');
+								$('.teacher_info').toggle();
+							});
+						</script>
+
+						<div data-btn>
+							<a href="#">취소</a>
+							<button type="submit" class="confirm wide">확인</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="personal_footer">
+				<div class="container">
+					<ul>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">고객센터</a></li>
+					</ul>
+					<div class="copyright">
+						© MIRAE N CO.,LTD. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../../css/common.css">
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<title>미래엔</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<h1>
+				<a href="#">미래엔</a>
+			</h1>
+			<div class="util">
+				<button type="button" class="menu search" data-open-search>검색페이지 열기</button>
+				<button type="button" class="menu nav_open">미래엔 메뉴 열기</button>
+			</div>
+			<div class="gnb_wrap">
+				<div class="gnb">
+					<div class="container">
+						<div class="user">
+							<p class="txt login">로그인을 해주세요</p>
+							<!-- <p class="txt">김미래김미래김미래김미래김미래김미래김미래님 안녕하세요</p> -->
+							<div class="user_menu">
+								<a href="#" class="mypage">
+									<span>마이페이지</span>
+								</a>
+								<a href="#" class="logout">
+									<span>로그아웃</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<nav>
+						<ul class="main_menu">
+							<li>
+								<!-- <a href="#none" class="book_open">교과서</a> -->
+								<button type="button" class="book_open">교과서</button>
+								<div class="sub_menu">
+									<div class="sub_header">
+										<span class="tit">교과서</span>
+										<a href="#" class="link">
+											<span>교과서 홈</span>
+										</a>
+									</div>
+									<ul>
+										<li><a href="#">미래엔 교과서</a></li>
+										<li><a href="#">초등</a></li>
+										<li><a href="#">중등</a></li>
+										<li><a href="#">고등</a></li>
+									</ul>
+									<button type="button" class="book_close">교과서 메뉴 닫기</button>
+									<button type="button" class="nav_close">미래엔 메뉴 닫기</button>
+								</div>
+							</li>
+							<li><a href="#">참고서</a></li>
+							<li><a href="#">일반도서</a></li>
+						</ul>
+						<ul class="main_menu">
+							<li><a href="#">맘티처</a></li>
+							<li><a href="#">공모전</a></li>
+						</ul>
+						<ul class="main_menu group">
+							<li><a href="#">기업소개</a></li>
+							<li><a href="#">홍보센터</a></li>
+							<li><a href="#">계열사</a></li>
+						</ul>
+					</nav>
+					<div class="footer">
+						<div class="footer_wrap">
+							<div class="container">
+								<ul class="menu">
+									<li><a href="#">인재채용</a></li>
+									<li><a href="#">고객센터</a></li>
+									<li><a href="#">오시는길</a></li>
+									<li><a href="#">관련사이트</a></li>
+								</ul>
+								<ul class="sns">
+									<li class="insta"><a href="#" target="_blank" title="새창열림">미래엔 인스타그램</a></li>
+									<li class="facebook"><a href="#" target="_blank" title="새창열림">미래엔 페이스북</a></li>
+									<li class="blog"><a href="#" target="_blank" title="새창열림">미래엔 네이버 블로그</a></li>
+								</ul>
+								<button type="button" class="show_info">㈜미래엔 사업자 정보</button>
+								<div class="business">
+									㈜미래엔 | 대표 신광수<br>
+									주소 06532 서울특별시 서초구 신반포로 321<br>
+									사업자등록번호 214-81-04977<br>
+									개인정보책임자 한범석<br>
+									이메일 <a href="mailto:webadmin@mirae-n.com">webadmin@mirae-n.com</a><br>
+									채용이메일 <a href="mailto:recruit@mirae-n.com">recruit@mirae-n.com</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<button type="button" class="nav_close">미래엔 메뉴 닫기</button>
+				</div>
+			</div>
+			<div class="search_wrap">
+				<div class="search">
+					<div class="search_header">
+						<div class="container box">
+							<a href="#">미래엔</a>
+							<button type="button" class="close" data-close-search>닫기</button>
+						</div>
+					</div>
+					<div class="search_box">
+						<div class="container box">
+							<div class="search_form">
+								<div data-input-item="search">
+									<input type="text" placeholder="검색어를 입력하세요.">
+									<button type="button" class="del">삭제</button>
+								</div>
+								<div class="autocomplete" style="display:none;">
+									<ul>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+										<li><a href="#">[참고서&gt;초등&gt;수학] <span class="keyword">하루 한장</span> 쏙셈 1권 (초등 1-1)</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="search_tool">
+								<div class="save">
+									<span class="text">검색어 자동저장</span>
+									<label><input type="checkbox" class="hidden"><span></span></label>
+								</div>
+								<div class="keyword_wrap">
+									<div class="keyword history">
+										<div class="tit_wrap">
+											<span class="tit">최근 검색어</span>
+											<button type="button">전체 삭제</button>
+										</div>
+										<div class="list">
+											<ul>
+												<li><a href="#">수학수학수학수학수학수학수학수학수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+												<li><a href="#">수학</a><button type="button">삭제</button></li>
+											</ul>
+										</div>
+									</div>
+									<div class="keyword recommend">
+										<div class="tit_wrap">
+											<span class="tit">추천 검색어</span>
+										</div>
+										<div class="list">
+											<ul>
+												<li><a href="#">하루한장</a></li>
+												<li><a href="#">올리드</a></li>
+												<li><a href="#">하루한장</a></li>
+												<li><a href="#">올리드</a></li>
+												<li><a href="#">하루한장</a></li>
+												<li><a href="#">올리드</a></li>
+												<li><a href="#">하루한장</a></li>
+												<li><a href="#">올리드</a></li>
+												<li><a href="#">하루한장</a></li>
+												<li><a href="#">올리드</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<script>
+			// [D] UI 확인용 스크립트
+			var searchBox = $('header .search_form'),
+				searchTool = $('header .search_tool');
+
+			searchBox.on('keyup', '[data-input-item] input', function() {
+				if ($(this).val() !== "") {
+					searchBox.find('.autocomplete').show();
+					searchTool.hide();
+				} else {
+					searchBox.find('.autocomplete').hide();
+					searchTool.show();
+				};
+			});
+		</script>
+		<div id="content" data-page="book">
+
+			<!-- 키비주얼 -->
+			<div class="main_visual swiper-container">
+				<div class="swiper-wrapper">
+					<div class="slide swiper-slide container tba">
+						<div class="txt_wrap">
+							<span class="tit">성인 단행본</span>
+						</div>
+					</div>
+					<div class="slide swiper-slide container tbi">
+						<div class="txt_wrap">
+							<span class="tit">아동&middot;만화 도서</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				if ($(".main_visual").find('.slide').length > 1) {
+					slideInit('.main_visual', {
+						effect: 'fade',
+						loop: true,
+						autoplay: {
+							delay: 5000,
+						},
+					});
+				}
+			</script>
+			<!-- //키비주얼 -->
+
+			<!-- 브랜드 -->
+			<section class="brand pub">
+				<div class="container">
+					<h2>미래엔 일반도서 브랜드</h2>
+					<div class="brand_slide swiper-container">
+						<div class="slide_wrap swiper-wrapper">
+							<div class="slide swiper-slide">
+								<div class="img_wrap">
+									<img src="../../images/img/book/img_brand_01.png" alt="">
+								</div>
+								<div class="txt_wrap">
+									<span class="tit">아이랑</span>
+									<p class="txt">
+										미래엔 아이랑은 아이와 부모가 함께 읽는 책, 아이의 미래와 함께하고 싶은 책을 만드는 유아 도서 브랜드입니다.
+									</p>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="img_wrap">
+									<img src="../../images/img/book/img_brand_02.png" alt="">
+								</div>
+								<div class="txt_wrap">
+									<span class="tit">아이세움</span>
+									<p class="txt">
+										아이세움은 미래의 주인공이 될 어린이와 청소년들이 자신의 뜻을 스스로 세울 수 있게 돕는다는 의미를 담고 있는 아동출판 브랜드입니다.
+									</p>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="img_wrap">
+									<img src="../../images/img/book/img_brand_03.png" alt="">
+								</div>
+								<div class="txt_wrap">
+									<span class="tit">북폴리오</span>
+									<p class="txt">
+										북폴리오는 성인 단행본 출판 브랜드로 ‘큰 책’ 또는 ‘넓게 펼쳐진 책’이라는 뜻을 담고 있으며,
+										국내외 문학상 수상작들과 베스트셀러들을 다수 보유하고 있습니다.
+									</p>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="img_wrap">
+									<img src="../../images/img/book/img_brand_04.png" alt="">
+								</div>
+								<div class="txt_wrap">
+									<span class="tit">와이즈베리</span>
+									<p class="txt">
+										성인을 위한 인문, 사회, 경제경영, 자기계발 등에 관한 서적을 출간하는 브랜드로 저명한 저자들의 인문서와 경제 경영서, 자기계발서 등을 만들고 있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</section>
+
+			<script>
+				slideInit('.brand_slide', {
+					loop: true,
+					speed: 0,
+					effect: "fade",
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+				});
+			</script>
+			<!-- //브랜드 -->
+
+			<!-- 신간 도서 -->
+			<section class="book_list">
+				<div class="container">
+					<h2>이번 주 신간 도서</h2>
+					<div>
+						<div data-tab="new" class="slide sub">
+							<ul>
+								<li class="on"><button type="button">영유아</button></li>
+								<li><button type="button">초등</button></li>
+								<li><button type="button">청소년</button></li>
+								<li><button type="button">성인</button></li>
+							</ul>
+						</div>
+						<div data-tab-cont="new">
+							<div class="tab_cont">
+								<div class="book_slide new_slide swiper-container">
+									<ul class="book_list swiper-wrapper">
+										<li class="slide swiper-slide">
+											<div class="img_wrap">
+												<img src="../../images/img/book/img_pick_book_01.png" alt="">
+											</div>
+											<div class="txt_wrap">
+												<p class="tit">툇마루에서 모든게 달라졌다 1</p>
+											</div>
+										</li>
+										<li class="slide swiper-slide">
+											<div class="img_wrap">
+												<img src="../../images/img/book/img_pick_book_02.png" alt="">
+											</div>
+											<div class="txt_wrap">
+												<p class="tit">툇마루에서 모든게 달라졌다 1</p>
+											</div>
+										</li>
+										<li class="slide swiper-slide">
+											<div class="img_wrap">
+												<img src="../../images/img/book/img_pick_book_03.png" alt="">
+											</div>
+											<div class="txt_wrap">
+												<p class="tit">툇마루에서 모든게 달라졌다 1</p>
+											</div>
+										</li>
+									</ul>
+									<div class="scrollbar"></div>
+								</div>
+							</div>
+							<div class="tab_cont" style="display:none;">
+								초등
+							</div>
+							<div class="tab_cont" style="display:none;">
+								청소년
+							</div>
+							<div class="tab_cont" style="display:none;">
+								성인
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script>
+				slideInit('.new_slide', {
+					spaceBetween: 16,
+					slidesPerView: 2,
+					scrollbar: {
+						el: ".new_slide .scrollbar",
+					},
+				});
+			</script>
+			<!-- //신간 도서 -->
+
+			<!-- 베스트 셀러 -->
+			<section class="book_list" style="padding-top:0;">
+				<div class="container">
+					<h2>베스트 셀러</h2>
+					<div>
+						<div data-tab="best" class="slide sub">
+							<ul>
+								<li class="on"><button type="button">영유아</button></li>
+								<li><button type="button">초등</button></li>
+								<li><button type="button">청소년</button></li>
+								<li><button type="button">성인</button></li>
+							</ul>
+						</div>
+						<div data-tab-cont="best">
+							<div class="tab_cont">
+								<div class="book_slide best_slide swiper-container">
+									<ul class="book_list swiper-wrapper">
+										<li class="slide swiper-slide">
+											<div class="img_wrap">
+												<img src="../../images/img/book/img_pick_book_01.png" alt="">
+											</div>
+											<div class="txt_wrap">
+												<p class="tit">툇마루에서 모든게 달라졌다 1</p>
+											</div>
+										</li>
+										<li class="slide swiper-slide">
+											<div class="img_wrap">
+												<img src="../../images/img/book/img_pick_book_02.png" alt="">
+											</div>
+											<div class="txt_wrap">
+												<p class="tit">툇마루에서 모든게 달라졌다 1</p>
+											</div>
+										</li>
+										<li class="slide swiper-slide">
+											<div class="img_wrap">
+												<img src="../../images/img/book/img_pick_book_03.png" alt="">
+											</div>
+											<div class="txt_wrap">
+												<p class="tit">툇마루에서 모든게 달라졌다 1</p>
+											</div>
+										</li>
+									</ul>
+									<div class="scrollbar"></div>
+								</div>
+							</div>
+							<div class="tab_cont" style="display:none;">
+								초등
+							</div>
+							<div class="tab_cont" style="display:none;">
+								청소년
+							</div>
+							<div class="tab_cont" style="display:none;">
+								성인
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script>
+				slideInit('.best_slide', {
+					spaceBetween: 16,
+					slidesPerView: 2,
+					scrollbar: {
+						el: ".best_slide .scrollbar",
+					},
+				});
+			</script>
+			<!-- //베스트 셀러 -->
+
+			<!-- 인기 시리즈 -->
+			<section class="recommend series">
+				<div class="">
+					<h2>인기 시리즈물 찾아보기</h2>
+					<div class="rebook_slide swiper-container">
+						<div class="slide_wrap swiper-wrapper">
+							<div class="slide swiper-slide">
+								<div class="box">
+									<div class="img_wrap">
+										<img src="../../images/img/book/img_series_01.png" alt="">
+									</div>
+									<div class="txt_wrap">
+										<span class="tit">흔한 남매 시리즈</span>
+										<p class="txt">유튜브 구독자 수 214만 돌파!<br>화제의 인기 크리에이터 흔한남매</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="box">
+									<div class="img_wrap">
+										<img src="../../images/img/book/img_series_01.png" alt="">
+									</div>
+									<div class="txt_wrap">
+										<span class="tit">흔한 남매 시리즈</span>
+										<p class="txt">유튜브 구독자 수 214만 돌파!<br>화제의 인기 크리에이터 흔한남매</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="box">
+									<div class="img_wrap">
+										<img src="../../images/img/book/img_series_01.png" alt="">
+									</div>
+									<div class="txt_wrap">
+										<span class="tit">흔한 남매 시리즈</span>
+										<p class="txt">유튜브 구독자 수 214만 돌파!<br>화제의 인기 크리에이터 흔한남매</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="box">
+									<div class="img_wrap">
+										<img src="../../images/img/book/img_series_01.png" alt="">
+									</div>
+									<div class="txt_wrap">
+										<span class="tit">흔한 남매 시리즈</span>
+										<p class="txt">유튜브 구독자 수 214만 돌파!<br>화제의 인기 크리에이터 흔한남매</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<div class="box">
+									<div class="img_wrap">
+										<img src="../../images/img/book/img_series_01.png" alt="">
+									</div>
+									<div class="txt_wrap">
+										<span class="tit">흔한 남매 시리즈</span>
+										<p class="txt">유튜브 구독자 수 214만 돌파!<br>화제의 인기 크리에이터 흔한남매</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="scrollbar" style="width:calc(100% - 36px); margin-left:18px;"></div>
+					</div>
+				</div>
+			</section>
+
+			<script>
+				if ($(".rebook_slide").find('.slide').length > 1) {
+					slideInit('.rebook_slide', {
+						// loop: true,
+						spaceBetween: 20,
+						centeredSlides: true,
+						scrollbar: {
+							el: ".rebook_slide .scrollbar",
+						},
+					});
+				}
+			</script>
+			<!-- //인기 시리즈 -->
+
+		</div>
+		<footer>
+			<div class="container">
+				<div class="info">
+					<div class="cs">
+						<div class="txt">
+							<strong>고객센터 : <a href="tel:+1800-8890">1800-8890</a></strong>(발신자 부담)<br>
+							고객센터 운영시간<br>
+							평일 09:00~18:00 (점심시간: 12:00~13:00)
+						</div>
+						<a href="#" class="link">1:1문의</a>
+					</div>
+					<div class="sns">
+						<p>미래엔을 만나보세요.</p>
+						<ul>
+							<li class="insta"><a href="#" target="_blank" title="새창열림">미래엔 인스타그램</a></li>
+							<li class="facebook"><a href="#" target="_blank" title="새창열림">미래엔 페이스북</a></li>
+							<li class="blog"><a href="#" target="_blank" title="새창열림">미래엔 네이버 블로그</a></li>
+							<li class="youtube"><a href="#" target="_blank" title="새창열림">미래엔 유튜브 채널</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<ul class="footer_menu">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">무단이메일 수집 거부</a></li>
+				<li><a href="#">오시는길</a></li>
+			</ul>
+			<div class="container">
+				<div class="footer_bottom">
+					<img src="../../images/img/img_footer_logo.png" alt="" class="logo">
+					<button type="button" class="show_info">㈜미래엔 사업자 정보</button>
+					<div class="business">
+						㈜미래엔 | 대표 신광수<br>
+						주소 06532 서울특별시 서초구 신반포로 321<br>
+						사업자등록번호 214-81-04977<br>
+						개인정보책임자 한범석<br>
+						이메일 <a href="mailto:webadmin@mirae-n.com">webadmin@mirae-n.com</a><br>
+						채용이메일 <a href="mailto:recruit@mirae-n.com">recruit@mirae-n.com</a>
+					</div>
+					<div class="copyright">
+						© MIRAE N CO.,LTD. All Rights Reserved
+					</div>
+					<img src="../../images/img/img_footer_award.png" alt="명문장수기업" class="award">
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
