@@ -2483,6 +2483,7 @@ footer .footer_bottom .award {position:absolute; right:0; bottom:15px; height:70
 [data-page='sub'].ad .newsletter {margin-top:-10px;}
 [data-page='sub'].ad .news_header {border-bottom:1px solid #dcdcdc;}
 [data-page='sub'].ad .news_header .main_tit {line-height:40px; margin-top:10px; margin-bottom:30px; font-size:28px;}
+[data-page='sub'].ad .news_header [data-select] select {color: #000;}
 [data-page='sub'].ad .news_header .year {display:-webkit-box;display:-ms-flexbox;display:flex; overflow-x:auto; overflow-y:hidden; margin-top:15px; -ms-flex-wrap:nowrap; flex-wrap:nowrap; -ms-scroll-snap-type:x mandatory; scroll-snap-type:x mandatory;}
 [data-page='sub'].ad .news_header .year::-webkit-scrollbar {display:none;}
 [data-page='sub'].ad .news_header .year li {margin-right:20px; scroll-snap-align:start;}
