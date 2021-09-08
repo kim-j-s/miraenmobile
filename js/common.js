@@ -84,7 +84,8 @@ $(function() {
     $('[data-tab]').find('button').on('click', function() {
         var idx = $(this).parent().index(),
             tabName = $(this).parents('[data-tab]').data('tab');
-        $(this).parent().addClass('on').siblings().removeClass('on');
+        $(this).parent().addClass('on').siblings().removeClass('on off');
+        $(this).parent().prev().addClass('off');
         $(`[data-tab-cont=${tabName}] > .tab_cont`).eq(idx).show().siblings().hide();
         $(`[data-tab-cont=${tabName}]`).find('input').val("");
     });
